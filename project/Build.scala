@@ -18,11 +18,11 @@ object BijectionBuild extends Build {
   val sharedSettings = Project.defaultSettings ++ osgiSettings ++ scalariformSettings ++ Seq(
     organization := "com.twitter",
 
-    crossScalaVersions := Seq("2.10.4", "2.11.5"),
+    crossScalaVersions := Seq("2.11.5", "2.11.5"),
 
     ScalariformKeys.preferences := formattingPreferences,
 
-    scalaVersion := "2.10.4",
+    scalaVersion := "2.11.5",
 
     javacOptions ++= Seq("-source", "1.6", "-target", "1.6"),
 
